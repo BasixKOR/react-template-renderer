@@ -1,10 +1,21 @@
 {
   "name": "react-template-tag",
   "packageManager": "yarn@3.1.1",
+  "type": "module",
+  "source": "src/index.tsx",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "main": "./dist/foo.cjs",
+  "scripts": {
+    "build": "microbundle"
+  },
   "devDependencies": {
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
     "@types/react-reconciler": "^0.26.4",
+    "microbundle": "^0.14.2",
     "prettier": "^2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
