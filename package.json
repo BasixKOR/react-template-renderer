@@ -1,5 +1,5 @@
 {
-  "name": "react-template-renderer",
+  "name": "react-template-tag",
   "packageManager": "yarn@3.1.1",
   "devDependencies": {
     "@types/react": "^17.0.39",
