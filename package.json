@@ -1,5 +1,5 @@
 {
-  "name": "react-template-tag",
+  "name": "@basixjs/react-template-tag",
   "version": "0.1.0",
   "packageManager": "yarn@3.1.1",
   "type": "module",
