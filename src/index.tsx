@@ -16,5 +16,5 @@ export default React.forwardRef<HTMLTemplateElement>(function Template({
 
   if (typeof window === "undefined")
     return <template {...props}>{children}</template>;
-  else return <template ref={mergeRefs([callbackRef, ref])} />;
+  else return <template ref={mergeRefs([callbackRef, ref])} {...props} />;
 });
