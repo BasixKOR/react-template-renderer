@@ -9,6 +9,7 @@
     "default": "./dist/index.modern.js"
   },
   "main": "./dist/index.cjs",
+  "module": "./dist/index.module.js",
   "scripts": {
     "build": "microbundle"
   },
