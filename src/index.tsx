@@ -6,9 +6,8 @@ export default React.forwardRef<HTMLTemplateElement>(function Template({
   children,
   ...props
 }: HTMLAttributes<HTMLTemplateElement>, ref) {
-  const portalRef = useRef<ReactPortal>(null);
   const callbackRef = useCallback((el: HTMLTemplateElement) => {
-    portalRef.current = createPortal(
+    createPortal(
       children,
       el.content as unknown as Element
     );
